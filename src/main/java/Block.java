@@ -36,7 +36,7 @@ public class Block implements makeBlock, showBlock {
             Main.pApplet.rect(tempBlock.BlockX, tempBlock.BlockY, width, height, 10);
             Main.pApplet.fill(0);
             Main.pApplet.textAlign(Main.pApplet.CENTER);
-            Main.pApplet.text("NIT", tempBlock.BlockX , tempBlock.BlockY + 7);
+            Main.pApplet.text("NIT", tempBlock.BlockX , tempBlock.BlockY + 7); //shows NIT on each block
         }
     }
 

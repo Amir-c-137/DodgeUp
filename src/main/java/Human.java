@@ -48,7 +48,7 @@ public class Human {
         // Draw "ME" on the shirt
         Main.pApplet.fill(255 , 0 , 0);
         Main.pApplet.textAlign(Main.pApplet.CENTER, Main.pApplet.CENTER);
-        Main.pApplet.text("ME", xPos, 500);
+        Main.pApplet.text("ME", xPos, 500); // shows ME on human
     }
     public float getXPos() {
         return xPos;
