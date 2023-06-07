@@ -33,7 +33,7 @@ public class Main extends PApplet {
                 float blockB = b.getBlockY() - b.getHeight() / 2;
                 if (humanX + 10 >= blockL && humanX - 10 <= blockR && humanY1 < blockT && humanY2 > blockB) {
                     life--;
-                    background.Damage();
+                    background.Damage(); // make ground red
                     if (life <= 1) {
                         score = frameCount / 10;
                         gameOver = true;
@@ -64,7 +64,7 @@ public class Main extends PApplet {
 
     public void gameOver(int score) {
         background(0);
-        textSize(45);
+        textSize(40);
         fill(38,230,0);
         text("your score is : " + score, 200, 200);
         fill(255,0,0);
