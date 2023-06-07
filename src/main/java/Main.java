@@ -19,9 +19,9 @@ public class Main extends PApplet {
     public void draw() {
         if (!gameOver) {
             background.setBackGround();
-            float humanx = human.getHeadXPos();
+            float humanX = human.getHeadXPos();
             float humanY1 = human.getHeadYPos() + human.getHeadHeight() / 2;
-            float humany2 = human.getHeadYPos() - human.getHeadHeight() / 2;
+            float humanY2 = human.getHeadYPos() - human.getHeadHeight() / 2;
             human.humanFPS();
             block.showBlocks();
 
@@ -31,7 +31,7 @@ public class Main extends PApplet {
                 float blockR = b.getBlockX() + b.getWidth() / 2;
                 float blockT = b.getBlockY() + b.getHeight() / 2;
                 float blockB = b.getBlockY() - b.getHeight() / 2;
-                if (humanx + 9 >= blockL && humanx - 9 <= blockR && humanY1 < blockT && humany2 > blockB) {
+                if (humanX + 10 >= blockL && humanX - 10 <= blockR && humanY1 < blockT && humanY2 > blockB) {
                     life--;
                     background.Damage();
                     if (life <= 1) {

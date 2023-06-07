@@ -21,7 +21,7 @@ public class Block implements makeBlock, showBlock {
     }
 
     public void makeBlocks() {
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 500; i++) {
             blocks.add(new Block(Main.pApplet.random(10, 500), speedY,
                     (int) Main.pApplet.random(0, 255),
                     (int) Main.pApplet.random(0, 255),
